@@ -80,3 +80,15 @@ function createExpenseTracker() {
 let tracker = createExpenseTracker();
 console.log(tracker(200)); // Expected output: "Total Expenses: $200"
 console.log(tracker(150)); // Expected output: "Total Expenses: $350"
+
+// Task 8: Recursive in JavaScript
+function calculateYearsToPromotion(employeeLevel) {
+    if (employeeLevel>= 10) {
+        return "Already at level 10 or higher";
+    }
+
+    return 2 + calculateYearsToPromotion(employeeLevel + 1);
+}
+
+console.log('Years to Level 10: ${calculateYearsToPromotion(7)}');
+console.log('Years to Level 10: ${calculateYearsToPromotion(6)}');
