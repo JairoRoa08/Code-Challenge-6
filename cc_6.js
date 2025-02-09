@@ -58,3 +58,12 @@ function convertCurrency(amount, exchangeRate) {
 }
 convertCurrency(100, 1.1); // Expected output: "Converted Amount: $110.00"
 convertCurrency(250, 0.85); // Expected output: "Converted Amount: $212.50"
+
+// Task 6: Higher-Order Functions
+let orders = [200, 600, 1200, 450, 800];
+
+function applyBulkDiscount (orders, discountFunction) {
+    let discountOrders = orders.map(discountFunction);
+    console.log(discountedOrders);
+}
+applyBulkDiscount(orders, amount => amount > 500 ? amount * 0.9 : amount); // Expected output: [200, 540, 1080, 450, 720]
